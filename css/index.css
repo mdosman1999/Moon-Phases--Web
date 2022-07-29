@@ -6,7 +6,7 @@ body{
 }
 
 .hedarSection{
-    background: #383b3c;
+    background: #413e3a;
     background-size: cover;
     width: 100%;
     display: flex;
@@ -14,17 +14,22 @@ body{
     align-items: center;
     padding: 0 36px;
     box-sizing: border-box;
+    position: fixed;
+    z-index: 9999999999;
+    box-shadow: 1px 4px 6px 1px #00000047;
 }
 
 .logoSection a{
     margin-left: 9px;
-    font-size: 30px;
+    font-size: 48px;
     text-decoration: none;
     color: #ffffff;
-    font-family: tahoma;
+    font-family: cursive;
     text-transform: capitalize;
     display: flex;
     align-items: center;
+    outline-width: 33px;
+    letter-spacing: 6px;
 }
 
 .logoSection a img{
@@ -53,10 +58,10 @@ body{
     margin-left: 6px;
 } */
 
-.manuBar a .login:hover {
+/* .manuBar a .login:hover {
     background-color: #d3a937;
     border-radius: 30px;
-}
+} */
 
 .register{
     border-radius: 63px;
@@ -80,14 +85,18 @@ p.level {
 } */
 
 /* fastselide */
-.fastselide{
+.fastselideback{
     background: url("../img/galaxy-3608029.jpg");
     background-size: cover;
+}
+
+.fastselide{
+    /* backdrop-filter: blur(20px); */
     color: #ffffff;
     overflow: hidden;
     display: flex;
     align-items: center;
-    padding: 25px 82px;
+    padding: 120px 82px;
     position: relative;
 }
 
@@ -128,7 +137,7 @@ p.level {
 }
 .textSection p{
     font-size: 23px;
-    font-family: tahoma;
+    font-family: monospace;
     line-height: 30px;
 }
 
@@ -149,6 +158,11 @@ p.level {
     align-items: center;
 }
 
+.enrol:hover{
+    box-shadow: 7px 7px 8px 0px #ffffff6e;
+    transition:all 600ms;
+}
+
 .enrol img{
     max-width: 30px;
     margin-left: 50px;
@@ -156,9 +170,14 @@ p.level {
 
 /* shortSection */
 
-.shortSection{
-    background: linear-gradient(322deg, #ab36b9, transparent);
+.shortSectionback{
     background: url("../img/pngwing.com\ \(5\).png");
+    background-size: cover;
+}
+
+.shortSection{
+    /* background: linear-gradient(322deg, #ab36b9, transparent); */
+    backdrop-filter: blur(20px);
     background-size: cover;
     padding: 5% 0;
     color: rgb(0, 0, 0);
@@ -170,6 +189,8 @@ p.level {
     font-size: 86px;
     font-family: cursive;
     margin-top: -33px;
+    text-transform: lowercase;
+    line-height: 90px;
 }
 
 .shortSection > div{
@@ -184,14 +205,15 @@ p.level {
 .fastoption{
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 56px;
-    font-size: 30px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-family: cursive;
 }
+
 
 .Screenshot {
     background: url("../img/download-1.png");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,6 +221,7 @@ p.level {
 }
 .Screenshot img{
     margin: 10px;
+    max-width: 50%;
 }
 .Edgebtn{
     text-decoration: none;
@@ -216,8 +239,78 @@ p.level {
     bottom: 42px;
     left: 50%;
 }
+.Edgebtn:hover{
+    box-shadow: 7px 7px 8px 0px #0000006e;
+    transition:all 600ms;
+}
 
 .Edgebtn img{
+    max-width: 30px;
+    margin-left: 50px;
+}
+
+/* shortSection2 */
+
+/* .shortSectionback2{
+    background: url("../img/4069130.jpg");
+    background-size: cover;
+} */
+
+.shortSection2{
+    background: rgba(212, 0, 255, 0.397);
+    background: linear-gradient(1deg, #fffffff7, rgba(212, 0, 255, 0.397));
+    backdrop-filter: blur(20px);
+    padding: 5% 0;
+    color: rgb(0, 0, 0);
+    position: relative;
+    padding-bottom: 156px;
+}
+.shortSection2 h1{
+    text-align: center;
+    font-size: 86px;
+    font-family: cursive;
+    margin-top: -33px;
+    text-transform: lowercase;
+    line-height: 90px;
+}
+
+.Screenshot2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.Screenshot2 img{
+    margin: 10px;
+    max-width: 50%;
+}
+.Screenshot2 iframe{
+    margin: 10px;
+    width: 40%;
+    box-shadow: -5px 15px 20px 0px #0000005e;
+    border-radius: 20px;
+}
+.Edgebtn2{
+    text-decoration: none;
+    padding: 19px 40px !important;
+    border-radius: 44px;
+    background: #ffffff;
+    color: #000000;
+    font-family: tahoma;
+    font-size: 26px;
+    position: absolute;
+    transform: translate(-50%, 0px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 42px;
+    left: 50%;
+}
+.Edgebtn2:hover{
+    box-shadow: 7px 7px 8px 0px #0000006e;
+    transition:all 600ms;
+}
+.Edgebtn2 img{
     max-width: 30px;
     margin-left: 50px;
 }
@@ -225,8 +318,8 @@ p.level {
 
 
 .footersection{
-    background: url("../img/pngwing.com (10).png");
-    background-size: 100%;
+    background: url("../img/pngwing.com\ \(10\).png");
+    background-size: cover;
     color: #000000;
     padding: 45px;
     justify-content: space-around;
@@ -284,3 +377,12 @@ hr{
     height: auto;
     padding: 15px;
 }
+
+@media screen and (max-width: 740px) {
+    /* body {
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
+        width: 144%;
+    } */
+  }
