@@ -1,12 +1,33 @@
+@font-face {
+    font-family: NewMachiato-jE0x9;
+    src: url(../font/NewMachiato-jE0x9.otf);
+}
 
 body{
     margin: 0;
-    padding: 0;
-    background: #ffffff;
+    padding: 0; 
+    background: linear-gradient(-45deg, #fab39d, #f8aeca, #a8e8ff, #b4faea);
+
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+    font-family: NewMachiato-jE0x9;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .hedarSection{
-    background: #413e3a;
+    background: #a656ff;
     background-size: cover;
     width: 100%;
     display: flex;
@@ -14,7 +35,7 @@ body{
     align-items: center;
     padding: 0 36px;
     box-sizing: border-box;
-    position: fixed;
+    position: relative;
     z-index: 9999999999;
     box-shadow: 1px 4px 6px 1px #00000047;
 }
@@ -24,7 +45,6 @@ body{
     font-size: 48px;
     text-decoration: none;
     color: #ffffff;
-    font-family: cursive;
     text-transform: capitalize;
     display: flex;
     align-items: center;
@@ -46,7 +66,6 @@ body{
     font-size: 20px;
     text-decoration: none;
     color: #ffffff;
-    font-family: tahoma;
     text-transform: capitalize;
     padding: 29px 18px;
 }
@@ -86,26 +105,27 @@ p.level {
 
 /* fastselide */
 .fastselideback{
-    background: url("../img/galaxy-3608029.jpg");
+    background: url("../img/nature-4508722.jpg");
     background-size: cover;
 }
 
 .fastselide{
-    /* backdrop-filter: blur(20px); */
     color: #ffffff;
     overflow: hidden;
     display: flex;
     align-items: center;
     padding: 120px 82px;
     position: relative;
+    backdrop-filter: blur(15px);
 }
 
 .imgSection{
     width: 858px;
 }
 .imgSection img{
-    width: 100%;
-   
+    width: 71%;
+    float: right;
+    margin-right: 93px;
 }
 
 .fastselide ul {
@@ -131,14 +151,20 @@ p.level {
 
 .textSection h1{
     text-transform: uppercase;
-    font-family: cursive;
     font-size: 50px;
     line-height: 75px;
+    text-shadow: 1px 1px 2px black;
 }
 .textSection p{
     font-size: 23px;
-    font-family: monospace;
     line-height: 30px;
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 2px;
+    background: #0000004f;
+    padding: 35px;
+    border-radius: 48px;
+    backdrop-filter: blur(75px);
+    box-shadow: 1px 1px 8px #ffffff7a;
 }
 
 .enrol{
@@ -147,7 +173,6 @@ p.level {
     border-radius: 44px;
     background: #ffffff;
     color: #000000;
-    font-family: tahoma;
     font-size: 18px;
     position: absolute;
     bottom: 3%;
@@ -170,14 +195,12 @@ p.level {
 
 /* shortSection */
 
-.shortSectionback{
+/* .shortSectionback{
     background: url("../img/pngwing.com\ \(5\).png");
     background-size: cover;
-}
+} */
 
 .shortSection{
-    /* background: linear-gradient(322deg, #ab36b9, transparent); */
-    backdrop-filter: blur(20px);
     background-size: cover;
     padding: 5% 0;
     color: rgb(0, 0, 0);
@@ -187,7 +210,6 @@ p.level {
 .shortSection h1{
     text-align: center;
     font-size: 86px;
-    font-family: cursive;
     margin-top: -33px;
     text-transform: lowercase;
     line-height: 90px;
@@ -197,7 +219,7 @@ p.level {
     width: 93%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .shortSection > div >div{
     overflow: hidden;
@@ -206,22 +228,23 @@ p.level {
     display: grid;
     grid-template-columns: 1fr;
     font-size: 24px;
-    font-family: cursive;
 }
 
 
 .Screenshot {
-    background: url("../img/download-1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 55%;
     position: relative;
 }
 .Screenshot img{
     margin: 10px;
-    max-width: 50%;
+    max-width: 85%;
+}
+.Screenshot img:hover{
+ box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.178);
+ transition: box-shadow 0.5s ease;
 }
 .Edgebtn{
     text-decoration: none;
@@ -229,7 +252,6 @@ p.level {
     border-radius: 44px;
     background: #ffffff;
     color: #000000;
-    font-family: tahoma;
     font-size: 26px;
     position: absolute;
     transform: translate(-50%, 0px);
@@ -257,8 +279,6 @@ p.level {
 } */
 
 .shortSection2{
-    background: rgba(212, 0, 255, 0.397);
-    background: linear-gradient(1deg, #fffffff7, rgba(212, 0, 255, 0.397));
     backdrop-filter: blur(20px);
     padding: 5% 0;
     color: rgb(0, 0, 0);
@@ -268,7 +288,6 @@ p.level {
 .shortSection2 h1{
     text-align: center;
     font-size: 86px;
-    font-family: cursive;
     margin-top: -33px;
     text-transform: lowercase;
     line-height: 90px;
@@ -296,7 +315,6 @@ p.level {
     border-radius: 44px;
     background: #ffffff;
     color: #000000;
-    font-family: tahoma;
     font-size: 26px;
     position: absolute;
     transform: translate(-50%, 0px);
@@ -331,13 +349,11 @@ p.level {
     width: 97%;
     text-align: center;
     font-size: 28px;
-    font-family: cursive;
     
 }
 .footersection div p{
     text-align: center;
     font-size: 22px;
-    font-family: cursive;
     
 }
 .addressbottom{
@@ -347,7 +363,7 @@ p.level {
     align-items: center;
 }
 hr{
-    border: 2px solid #60b7d9 ;
+    border: 2px solid #a656ff;
     width: 60%;
 }
 
@@ -358,12 +374,10 @@ hr{
 .addressbottom div p{
     text-align: left;
     font-size: 17px;
-    font-family: cursive;
 }
 .addressbottom div h3{
     text-align: left;
     font-size: 17px;
-    font-family: cursive;
 }
 .Socialmedia{
     display: flex;
@@ -376,6 +390,102 @@ hr{
     width: 30px;
     height: auto;
     padding: 15px;
+}
+
+.morApp a{
+    width: 20px;
+}
+
+.morApp img{
+    width: 20px;
+    padding: 6px;
+}
+
+
+.buttonDownload {
+    position: relative;
+    padding: 10px 25px;
+    background-color: #dfdfdf;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 0.9em;
+    text-align: center;
+    text-indent: 15px;
+    position: absolute;
+    border-color: #4CC713;
+    border-top-color: #4CC713;
+	animation-play-state: running;
+}
+
+.buttonDownload:hover {
+	background-color: #536769;
+	color: rgb(255, 255, 255);
+}
+
+.buttonDownload:before, .buttonDownload:after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 15px;
+	top: 52%;
+}
+
+/* Download box shape  */
+.buttonDownload:before {
+	width: 10px;
+	height: 2px;
+	border-style: solid;
+	border-width: 0 2px 2px;
+}
+
+/* Download arrow shape */
+.buttonDownload:after {
+	width: 0;
+	height: 0;
+	margin-left: 3px;
+	margin-top: -7px;
+  
+	border-style: solid;
+	border-width: 4px 4px 0 4px;
+	border-color: transparent;
+	border-top-color: inherit;
+	
+	animation: downloadArrow 2s linear infinite;
+	animation-play-state: paused;
+    border-top-color: #4CC713;
+	animation-play-state: running;
+}
+
+.buttonDownload:hover:before {
+	border-color: #4CC713;
+}
+
+.buttonDownload:hover:after {
+	border-top-color: #4CC713;
+	animation-play-state: running;
+}
+
+/* keyframes for the download icon anim */
+@keyframes downloadArrow {
+	/* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
+	0% {
+		margin-top: -7px;
+		opacity: 1;
+	}
+	
+	0.001% {
+		margin-top: -15px;
+		opacity: 0;
+	}
+	
+	50% {
+		opacity: 1;
+	}
+	
+	100% {
+		margin-top: 0;
+		opacity: 0;
+	}
 }
 
 @media screen and (max-width: 740px) {

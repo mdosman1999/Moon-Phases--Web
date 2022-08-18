@@ -19,6 +19,15 @@
 
 // Wait for the deviceready event before using any of Cordova's device APIs.
 // See https://cordova.apache.org/docs/en/latest/cordova/events/events.html#deviceready
+
+
+new Splide( '.splide',  {
+    type   : 'loop',
+    perPage:1,
+    pagination: false,
+    autoplay: true,
+  }  ).mount();
+
 document.addEventListener('deviceready', onDeviceReady, false);
 
 function onDeviceReady() {
